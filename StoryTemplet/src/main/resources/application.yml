@@ -1,0 +1,20 @@
+# Confiure this Discovery Server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka/
+      
+#HTTP port
+server:
+  port: 1000
+  
+# Service register under this name
+spring:
+  application:
+    name: storyTemplet
+# db config
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: storyTemplets
